@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZBC_CCLM_UPL_SAPSCRIPT</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Class to extract usage of SAPScript forms</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>AGGREGATE_USAGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aggregate usage statistic</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ACTUAL_USAGE_BY_DATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>get SAPscript usage by date</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SAPSCRIPT_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Get SAPScript form name by content</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>WRITE_USAGE_TO_DB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Persist usage statistics to database</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>AGGREGATE_USAGE</CMPNAME>
+     <SCONAME>SPOOL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>list of non aggregated usage data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AGGREGATE_USAGE</CMPNAME>
+     <SCONAME>USAGE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>aggregated usage data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ACTUAL_USAGE_BY_DATE</CMPNAME>
+     <SCONAME>USAGE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>table containing aggregated data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ACTUAL_USAGE_BY_DATE</CMPNAME>
+     <SCONAME>USAGE_FROM</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>spool created from date</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ACTUAL_USAGE_BY_DATE</CMPNAME>
+     <SCONAME>USAGE_TO</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>spool created to date</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SAPSCRIPT_NAME</CMPNAME>
+     <SCONAME>CONTENT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>content of TemSe object</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SAPSCRIPT_NAME</CMPNAME>
+     <SCONAME>FORM_NAME</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name of SAPScript form</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_USAGE_TO_DB</CMPNAME>
+     <SCONAME>USAGE_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>List with actual usage data to store</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

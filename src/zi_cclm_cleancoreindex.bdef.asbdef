@@ -1,0 +1,40 @@
+managed implementation in class zbp_i_cclm_cleancoreindex unique;
+strict ( 2 );
+
+define behavior for zi_cclm_cleancoreindex alias CleanCoreIndexHistory
+persistent table zbc_cclmidx
+lock master
+authorization master ( instance )
+early numbering
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+
+    field( readonly : update )
+    Cclmtype,
+    Id,
+    Indexdate,
+    ObjName,
+    SubName;
+
+
+  field( mandatory : create )
+  Abappackage,
+  Applicationcomponent;
+
+  mapping for zbc_cclmidx
+  {
+    Abappackage = abappackage;
+    Applicationcomponent = applicationcomponent;
+    Cclmtype = cclmtype;
+    Id = id;
+    Indexdate = indexdate;
+    ObjName = objname;
+    SubName = subname;
+	
+   }
+
+}
