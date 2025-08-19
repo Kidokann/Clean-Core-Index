@@ -148,6 +148,6 @@ CLASS zbc_cclm_upl_sapscript IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD write_usage_to_db.
-   < to persist the data, add your own logic here >
+  " < to persist the data, add your own logic here >
   ENDMETHOD.
 ENDCLASS.
